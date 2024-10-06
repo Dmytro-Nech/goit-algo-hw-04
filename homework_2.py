@@ -26,5 +26,5 @@ def get_cats_info(path) -> list:
     
 
 if __name__ == "__main__":
-    print(get_cats_info("cats.txt"))
+    print(get_cats_info("test_files\cats.txt"))
 

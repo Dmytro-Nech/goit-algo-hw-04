@@ -26,7 +26,7 @@ def total_salary(path) -> tuple:
     
 if __name__ == "__main__":
     try:
-        total, average = total_salary("salary.txt")
+        total, average = total_salary("test_files\salary.txt")
         print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
     except Exception as e:
         print("Something goes wrong")
