@@ -36,10 +36,9 @@ def phone_username(args, contacts):
     
 def print_all(contacts):
     if contacts:
-        for contact in contacts:
-            print(f"Username: {contact}, phone: {contacts[contact]}")
+        return contacts
     else:
-        print("Phonebook is empty")
+        return "Phonebook is empty"
 
 
 def main():
@@ -61,7 +60,7 @@ def main():
         elif command == "phone":
             print(phone_username(args, contacts))
         elif command == "all":
-            print_all(contacts)
+            print(print_all(contacts))
         else:
             print("Invalid command.")
 

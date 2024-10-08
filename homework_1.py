@@ -15,7 +15,7 @@ def total_salary(path) -> tuple:
                     print(f"Incorrect salary value : {line.strip()}")
                     continue
         total = sum(salary_list)
-        average = int(total / len(salary_list))
+        average = total / len(salary_list)
         return (total, average)
     except FileNotFoundError: # Обробляємо інші виключення
         print("File not found")

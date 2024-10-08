@@ -20,7 +20,7 @@ if not directory.is_dir():
     sys.exit(1)
 
 # Рекурсивне виведення переліку всіх файлів та піддиректорій різними кольорами
-for path in directory.rglob("*"):
+for path in directory.glob("**/*"):
    if path.is_dir():
         print(f"{Fore.BLUE}{path.parent}\\{Fore.RESET}{Fore.BLUE}{path.name}{Fore.RESET}")
    else:
