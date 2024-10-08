@@ -9,7 +9,7 @@ def add_contact(args, contacts):
         contacts[name] = phone
         return "Contact added."
     except ValueError:
-        print("Ivalid data")
+        return "Ivalid data"
 
 def change_contact(args, contacts):
     try:
